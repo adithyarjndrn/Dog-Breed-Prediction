@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dog Breed Predictor</title>
+</head>
+<body>
+    <h1>Dog Breed Predictor</h1>
+    <form method="POST" action="/predict" enctype="multipart/form-data">
+        <label for="file">Choose a dog image:</label>
+        <input type="file" name="file" accept="image/*">
+        <input type="submit" value="Predict">
+    </form>
+    <h3><br>{{prediction_text}}</h3>
+</body>
+</html>
